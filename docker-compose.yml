@@ -55,7 +55,7 @@ services:
     volumes:
       - https-portal-data:/var/lib/https-portal
     healthcheck:
-      test: ["CMD", "service", "nginx", "status"]
+      test: ["CMD", "service","status"]
       interval: 30s
       timeout: 20s
       retries: 3
